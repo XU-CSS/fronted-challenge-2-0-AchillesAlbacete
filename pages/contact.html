@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact (Broken)</title>
+    <title>Contact</title>
 
-    <!-- INTENTIONALLY BROKEN: wrong relative path to CSS from a nested page -->
-    <link rel="stylesheet" href="./styles/mainStyle.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
     <header class="site-header">
@@ -14,9 +13,8 @@
         <h1 class="site-title">Contact Us</h1>
 
         <nav class="site-nav" aria-label="Primary">
-          <!-- INTENTIONALLY BROKEN: wrong paths back to root pages -->
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
+          <a href="../index.html">Home</a>
+          <a href="../about.html">About</a>
           <a href="contact.html" aria-current="page">Contact</a>
         </nav>
       </div>
@@ -31,12 +29,16 @@
           folder on purpose to test correct use of relative paths.)
         </p>
 
-        <div class="card" aria-label="Quick links">
-          <p><strong>Quick links:</strong></p>
-          <ul>
-            <li>GitHub: <a href="#">github.com/alexdev</a></li>
-            <li>Email: <a href="#">alex.dev@example.com</a></li>
-          </ul>
+        <div class="card contact-info-row" aria-label="Quick links">
+          <div>
+            <p><strong>Quick links:</strong></p>
+          </div>
+          <div>
+            <ul>
+              <li>GitHub: <a href="#">github.com/alexdev</a></li>
+              <li>Email: <a href="#">alex.dev@example.com</a></li>
+            </ul>
+          </div>
         </div>
 
         <form class="contact-form">
